@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Travel</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <%- include ('header.ejs') %> 
+    <main>
+
+    <!-- Slider -->
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide mt-20" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+              </div>
+          </div>
+          <div class="row mt-20 articles">
+            <div class="col-4">
+              <div class="card">
+                  <img src="/images/okta-cloud.webp" alt="Okta Customer Identity" class="card-img-top">
+                  <div class="card-body">
+                      <h4 class="card-title">Okta Customer Identity</h4>
+                      <p class="card-text">Build secure and seamless customer experiences using Okta’s customer authentication products ...</p>
+                      <a class="btn btn-primary" href="/sight?id=406rab1kg9jjs3x">Details</a>
+                  </div>
+              </div>
+            </div>
+              
+              <div class="col-4">
+              <div class="card">
+                  <img src="/images/front_side_mockup_6.png" alt="ID Now Verification" class="card-img-top">
+                  <div class="card-body">
+                      <h4 class="card-title">ID Now Verification</h4>
+                      <p class="card-text">The identity verification platform that users love. Optimized for conversion and security. Built for enterprise. ...</p>
+                      <a class="btn btn-primary" href="/sight?id=406rab1kg9jnij0">Details</a>
+                  </div>
+              </div>
+            </div>
+              
+              <div class="col-4">
+              <div class="card">
+                  <img src="/images/isometrische-zusammensetzung-von-online-banking-diensten_1284-25316.jpg" alt="Banking 24/7" class="card-img-top">
+                  <div class="card-body">
+                      <h4 class="card-title">Banking 24/7</h4>
+                      <p class="card-text">Use our banking services 24/7 ...</p>
+                      <a class="btn btn-primary" href="/sight?id=406rab1kg9jqajx">Details</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </main>
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="email-request-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                  </div>
+                  <input type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center">
+                    <p class="copy">&copy;2020, All Rights Reserved</p>
+                </div>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="js/posts.js"></script>
+    <script src="js/emails.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

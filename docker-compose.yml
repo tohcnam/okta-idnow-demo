@@ -1,0 +1,23 @@
+version: "2"
+
+services:
+  travelapp:
+    build: .
+    image: letstravel
+    container_name: travelapp
+    links: 
+      - traveldb
+    ports:
+      - 3000:3000
+    volumes: 
+      - images-idnow:/app/public/images
+  traveldb:
+    build: ./db
+    image: traveldb
+    container_name: traveldb
+    volumes: 
+      - mongodb-data-idnow:/data/db:rw
+
+volumes: 
+  mongodb-data-idnow:
+  images-idnow: 
